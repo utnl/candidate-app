@@ -1,0 +1,33 @@
+
+[functions.add-candidate]
+enabled = true
+verify_jwt = true
+import_map = "./functions/add-candidate/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/add-candidate/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/add-candidate/*.html" ]
+
+[functions.add-batch-candidates]
+enabled = true
+verify_jwt = true
+import_map = "./functions/add-batch-candidates/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/add-batch-candidates/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/add-batch-candidates/*.html" ]
+
+[functions.analytics]
+enabled = true
+verify_jwt = true
+import_map = "./functions/analytics/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/analytics/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/analytics/*.html" ]
